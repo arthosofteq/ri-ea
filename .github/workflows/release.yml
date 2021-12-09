@@ -24,7 +24,7 @@ jobs:
           automatic_release_tag: latest
           files: |
             data.zip
-            .checksum
+            ./.checksum
 #      - name: Create Release
 #        id: create_release
 #        uses: actions/create-release@v1
