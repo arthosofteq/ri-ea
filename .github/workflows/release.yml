@@ -17,7 +17,7 @@ jobs:
           cd src && zip -r ../release/data.zip .
       - name: Calculate checksum
         run: |
-          md5sum data.zip > release/.checksum
+          md5sum release/data.zip > release/.checksum
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
