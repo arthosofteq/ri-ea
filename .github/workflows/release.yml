@@ -16,7 +16,7 @@ jobs:
           cd src && zip -r ../data.zip .
       - name: Calculate checksum
         run: |
-          md5sum data.zip > .checksum
+          md5sum data.zip > checksum.txt
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -24,7 +24,7 @@ jobs:
           automatic_release_tag: latest
           files: |
             data.zip
-            ./.checksum
+            checksum.txt
 #      - name: Create Release
 #        id: create_release
 #        uses: actions/create-release@v1
