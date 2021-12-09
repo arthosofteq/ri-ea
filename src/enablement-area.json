@@ -1,0 +1,21 @@
+[
+  {
+    "type": "group",
+    "id": "quick-guides",
+    "label": "New Area",
+    "args": {
+      "withBorder": true,
+      "initialIsOpen": true
+    },
+    "children": [
+      {
+        "type": "internal-link",
+        "id": "test",
+        "label": "test",
+        "args": {
+          "path": "/static/workbench/test/test.html"
+        }
+      }
+    ]
+  }
+]
