@@ -27,6 +27,7 @@ jobs:
           release_name: Release ${{ github.event.head_commit.message }}
           draft: false
           prerelease: false
+          overwrite: true
       - name: Upload zip
         id: upload-zip
         uses: actions/upload-release-asset@v1
